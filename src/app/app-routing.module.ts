@@ -4,6 +4,7 @@ import {EmployeeListComponent} from './employee-list/employee-list.component';
 import {EmployeeSaveComponent} from './employee-save/employee-save.component';
 
 const routes: Routes = [
+  {path: '', redirectTo: 'employeeList', pathMatch: 'full'},
   {path: 'employeeList', component: EmployeeListComponent},
   {path: 'addEmployee', component: EmployeeSaveComponent},
 ];
